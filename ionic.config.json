@@ -1,0 +1,7 @@
+{
+  "name": "snap-poser",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

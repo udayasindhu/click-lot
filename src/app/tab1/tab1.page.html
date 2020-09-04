@@ -1,0 +1,101 @@
+<!-- Application Header -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="header-ion-title">
+      <ion-icon name="arrow-back-outline" style="float: left"></ion-icon>
+      <ion-label>Details</ion-label>
+      <ion-icon name="menu-outline" style="float: right"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Search Bar -->
+  <div [formGroup]="form">
+    <ion-searchbar
+      class="tag-item search"
+      formControlName="tag"
+      (keyup)="onKeyUp($event)"
+      data-fixedvalue="#cheeselove,#kofluence"
+    >
+    </ion-searchbar>
+  </div>
+
+  <!-- Suggested Hashtags -->
+  <div>
+    <ion-title
+      >Hashtags:
+      <div class="card-grid">
+        <ion-chip
+          class="tag-item"
+          *ngFor="let tag of tags"
+          (click)="pushTag(tag)"
+        >
+          <ion-label color="dark">{{tag}}</ion-label>
+          <ion-icon
+            color="dark"
+            name="close-outline"
+            (click)="removeTag(tag)"
+          ></ion-icon>
+        </ion-chip>
+      </div>
+    </ion-title>
+  </div>
+
+  <!-- Users' Posts -->
+  <div class="card-deck" style="overflow-x: hidden">
+    <ion-title>Your Posts</ion-title>
+    <div class="content-container">
+      <div class="content-area">
+        <div
+          class="scroll-container"
+          (mouseleave)="showScroll = false"
+          (mouseenter)="showScroll = true"
+          [ngClass]="{'show-scroll' : showScroll}"
+        >
+          <div *ngFor="let post of userPosts">
+            <ion-card class="ion-image user-posts">
+              <div class="ion-header">
+                <ion-icon name="time-outline"></ion-icon> {{post.date}}
+              </div>
+              <ion-icon name="{{post.icon}}" class="header-icon"></ion-icon>
+              <img src="{{post.img}}" alt="photo" />
+              <div class="button-bar">
+                <ion-icon class="button" name="heart"></ion-icon>
+                <ion-label>{{post.likes}}</ion-label>
+                <ion-icon name="chatbox-ellipses"></ion-icon>
+                <ion-label>{{post.comments}}</ion-label>
+              </div>
+            </ion-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Similar Posts -->
+  <div class="card-deck">
+    <ion-title>Similar Posts</ion-title>
+    <div class="row" style="margin-left: 1%">
+      <div
+        class="col-sm-6 col-lg-6 col-xm-6"
+        *ngFor="let post of similarPosts"
+        style="padding-left: 0px; padding-right: 0px"
+      >
+        <ion-card class="ion-image similar-posts">
+          <div class="ion-header">
+            <ion-icon name="time-outline"></ion-icon> {{post.date}}
+          </div>
+          <ion-icon name="{{post.icon}}" class="header-icon"></ion-icon>
+          <img src="{{post.img}}" alt="photo" />
+          <div class="button-bar">
+            <ion-icon class="button" name="heart"></ion-icon>
+            <ion-label>{{post.likes}}</ion-label>
+            <ion-icon name="chatbox-ellipses"></ion-icon>
+            <ion-label>{{post.comments}}</ion-label>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,98 @@
+{
+    "Pizza": {
+        "date": "12 Sep",
+        "type": "image",
+        "icon": "image",
+        "likes": 8793,
+        "comments": 646,
+        "img": "../assets/Images/Pizza.jpg"
+    },
+    "Burger": {
+        "date": "10 Sep",
+        "type": "image",
+        "icon": "image",
+        "likes": 1340,
+        "comments": 19687,
+        "img": "../assets/Images/Burger.jpg"
+    },
+    "Soup": {
+        "date": "5 Sep",
+        "type": "image",
+        "icon": "image",
+        "likes": 22035,
+        "comments": 6778,
+        "img": "../assets/Images/Soup.jpg"
+    },
+    "Sandwich": {
+        "date": "1 Sep",
+        "type": "image",
+        "icon": "image",
+        "likes": 7323,
+        "comments": 3276,
+        "img": "../assets/Images/Sandwich.jpg"
+    },
+    "Cake": {
+        "date": "19 Aug",
+        "type": "image",
+        "icon": "image",
+        "likes": 43487,
+        "comments": 3324,
+        "img": "../assets/Images/Cake.jpg"
+    },
+    "Pasta": {
+        "date": "21 Aug",
+        "type": "image",
+        "icon": "image",
+        "likes": 949,
+        "comments": 164,
+        "img": "../assets/Images/Pasta.jpg"
+    },
+    "Salad": {
+        "date": "17 Aug",
+        "type": "image",
+        "icon": "image",
+        "likes": 21035,
+        "comments": 23453,
+        "img": "../assets/Images/Salad.jpg"
+    },
+    "Bread": {
+        "date": "8 Jul",
+        "type": "image",
+        "icon": "image",
+        "likes": 11340,
+        "comments": 2308,
+        "img": "../assets/Images/Bread.jpg"
+    },
+    "PanCake": {
+        "date": "18 Aug",
+        "type": "image",
+        "icon": "play",
+        "likes": 21140,
+        "comments": 82308,
+        "img": "../assets/Images/PanCake.gif"
+    },
+    "Taco": {
+        "date": "11 Jun",
+        "type": "image",
+        "icon": "play",
+        "likes": 23340,
+        "comments": 2383,
+        "img": "../assets/Images/Taco.gif"
+    },
+    "Omlet": {
+        "date": "13 Jun",
+        "type": "image",
+        "icon": "play",
+        "likes": 9842,
+        "comments": 9834,
+        "img": "../assets/Images/Omlet.gif"
+    },
+    "Rusk": {
+        "date": "6 Jun",
+        "type": "image",
+        "icon": "play",
+        "likes": 65236,
+        "comments": 48643,
+        "img": "../assets/Images/Rusk.gif"
+    }
+}

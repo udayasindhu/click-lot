@@ -1,0 +1,21 @@
+{
+  "#cheeselove": ["Pizza", "Burger", "Sandwich"],
+  "#kofluence": ["Pasta"],
+  "#kofluencer": ["Pasta"],
+  "#milk": ["Cake", "PanCake"],
+  "#egg": ["Cake", "Taco", "Omlet"],
+  "#healthy": ["Soup", "Salad", "Bread", "Rusk"],
+  "#food": [
+    "Pizza",
+    "Burger",
+    "Sandwich",
+    "Cake",
+    "Soup",
+    "Salad",
+    "Bread",
+    "PanCake",
+    "Taco",
+    "Omlet",
+    "Rusk"
+  ]
+}
